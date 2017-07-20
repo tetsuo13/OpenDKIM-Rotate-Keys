@@ -10,12 +10,12 @@ It will perform the following tasks:
 
 1. Generate a new key for each domain configured to use OpenDKIM to a
    temporary directory.
-  * The selector will be today's date in *YYYYMMDD* format with
-    microseconds. This allows you to generate keys multiple times in a single
-    day while still providing some level of anonymity to cloak when it was
-    created.
-  * Temporary directory which contains the public and private keys will be
-    readable only by root.
+    * The selector will be today's date in *YYYYMMDD* format with
+      microseconds. This allows you to generate keys multiple times in a
+      single day while still providing some level of anonymity to cloak when
+      it was created.
+    * Temporary directory which contains the public and private keys will be
+      readable only by root.
 2. Create new TXT DNS records using the new selector. Currently only supports
    the Linode API but other DNS providers can be added.
 3. Script will pause and wait for user input before installing the keys. This
@@ -41,7 +41,8 @@ Specifically:
 - Python 2.7 or greater. Untested with Python 3 but may work.
 - [OpenDKIM](http://opendkim.org/) is installed using Apt.
 - OpenDKIM is configured to use the "KeyTable" data set. Example settings
-  relevant to this script:```
+  relevant to this script:
+```
 KeyTable            /etc/dkimkeys/key.table
 SigningTable        refile:/etc/dkimkeys/signing.table
 ```
