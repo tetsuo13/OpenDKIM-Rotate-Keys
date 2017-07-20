@@ -26,7 +26,7 @@ class ScrubTxtRecordTests(unittest.TestCase):
 
 class CreateDnsProviderTests(unittest.TestCase):
     def test_linode(self):
-        from odkim_rotate.dns.linode_provider import *
+        from odkim_rotate.dns import provider,linode_provider
 
         os.environ['LINODE_API_KEY'] = ''
         provider = create_dns_provider('linode')
