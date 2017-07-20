@@ -70,7 +70,7 @@ After some amount of time press any key to continue. For reference, Linode
 typically takes at least 15 minutes.
 
 The
-(http://www.opendkim.org/opendkim-testkey.8.html)[OpenDKIM filter installation test]
+[OpenDKIM filter installation test](http://www.opendkim.org/opendkim-testkey.8.html)
 will then test each of the new keys. If they all succeed then the new keys
 will be installed and the Postfix and OpenDKIM daemons are restarted.
 
