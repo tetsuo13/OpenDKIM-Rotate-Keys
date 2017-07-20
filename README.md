@@ -1,6 +1,6 @@
 # OpenDKIM Key Rotate
 
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/tetsuo13/OpenDKIM-Rotate-Keys)
+[![Travis](https://travis-ci.org/tetsuo13/OpenDKIM-Rotate-Keys.svg?branch=master)](https://travis-ci.org/tetsuo13/OpenDKIM-Rotate-Keys)
 
 Automates the task of rotating OpenDKIM keys by generating new keys for the
 existing domains in a temporary location, creating new DNS entries in Linode,
