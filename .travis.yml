@@ -1,5 +1,5 @@
 language: python
 python:
   - "2.7"
-script: run_tests.py
+script: python run_tests.py
 
