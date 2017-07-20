@@ -29,7 +29,8 @@ def main(verbose):
 
 if __name__ == '__main__':
     if os.getenv('USER') != 'root':
-        sys.exit('Error: script must be run as root')
+        print('Error: script must be run as root')
+        sys.exit(os.EX_USAGE)
 
     main(len(sys.argv) == 2 and sys.argv[1] == '-v')
 
