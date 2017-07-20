@@ -1,5 +1,13 @@
 language: python
 python:
   - "2.7"
-script: python run_tests.py
+
+install:
+  - pip install requests
+
+script:
+  # Doesn't matter that the Linode API key here is, environment variable just
+  # needs to be available.
+  - export LINODE_API_KEY='foo'
+  - python run_tests.py
 
