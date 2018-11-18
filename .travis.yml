@@ -6,8 +6,7 @@ install:
   - pip install requests
 
 script:
-  # Doesn't matter that the Linode API key here is, environment variable just
-  # needs to be available.
+  # Doesn't matter what the Linode API key is, environment variable just
+  # needs to be set.
   - export LINODE_API_KEY='foo'
   - python run_tests.py
-
